@@ -1,18 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-    
-</head>
-<body>
-    <div id="del"></div>
-<script>
-    let greet = "Hello World!";
-    this.document.getElementById('del').innerHTML = greet;
-</script>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Hello Colors</title>
 
-    
-</body>
+    <style>
+      #rectangleWrapper {
+        padding: 50px 50px 0 50px;
+      }
+
+      .rectangle {
+        height: 120px;
+      }
+
+      #col1 {
+        background-color: #C0392B;
+      }
+      #col2 {
+        background-color: #8E44AD;
+      }
+      #col3 {
+        background-color:  #3498DB;
+      }
+      #col4 {
+        background-color:  #1ABC9C;
+      }
+      #col5 {
+        background-color:  #27AE60;
+      }
+      #col6 {
+        background-color:  #2ECC71;
+      }
+      #col7 {
+        background-color:  #F1C40F;
+      }
+      #col8 {
+        background-color: #D35400;
+      }
+      #col9 {
+        background-color: #D0D3D4;
+      }
+      #col10 {
+        background-color: #839192;
+      }
+    </style>
+  </head>
+  <body onload="displayIDs()">
+
+    <h1 id="headline"></h1>
+    <h2 id="sub-headline"></h2>
+
+    <div id="rectangleWrapper">
+      <div class="rectangle" id="col1"></div>
+      <p>#C0392B</p>
+      <div class="rectangle" id="col2"></div>
+      <p>#8E44AD</p>
+      <div class="rectangle" id="col3"></div>
+      <p>#3498DB</p>
+      <div class="rectangle" id="col4"></div>
+      <p>#1ABC9C</p>
+      <div class="rectangle" id="col5"></div>
+      <p>#27AE60</p>
+      <div class="rectangle" id="col6"></div>
+      <p>#2ECC71</p>
+      <div class="rectangle" id="col7"></div>
+      <p>#F1C40F</p>
+      <div class="rectangle" id="col8"></div>
+      <p>#D35400</p>
+      <div class="rectangle" id="col9"></div>
+      <p>#D0D3D4</p>
+      <div class="rectangle" id="col10"></div>
+      <p>#839192</p>
+    </div>
+
+    <script>
+    document.getElementById("headline").innerHTML = "Hello Colors";
+    document.getElementById("sub-headline").innerHTML = "Mi Colores Para Tu";
+    function displayIDs() {
+      console.log("Here are the rectangle IDs");
+
+      const wrapper = document.getElementById("rectangleWrapper");
+      const rectangles = wrapper.getElementsByClassName("rectangle");
+
+      for (const rectangle of rectangles) {
+        console.log(rectangle.id);
+      }
+    }
+    </script>
+  </body>
 </html>

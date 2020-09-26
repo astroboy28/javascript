@@ -1,0 +1,38 @@
+.rectangle{
+    height: 100px;
+    width: 100px;
+}
+ul li {
+    height: 100px;
+    width: 100px;
+}
+#col1{
+    background-color: #C0392B;
+}
+#col2{
+    background-color: #8E44AD;
+}
+#col3{
+    background-color: #3498DB;
+}
+#col4{
+    background-color: #1ABC9C;
+}
+#col5{
+    background-color: #27AE60;
+}
+#col6{
+    background-color: #2ECC71;
+}
+#col7{
+    background-color: #F1C40F;
+}
+#col8{
+    background-color: #D35400;
+}
+#col9{
+    background-color: #D0D3D4;
+}
+#col10{
+    background-color: #839192;
+}
