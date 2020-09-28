@@ -1,17 +1,128 @@
-*{
-  
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body{
+  }
+  
+  body {
+    color: #545454;
     display: flex;
-    font-family: Georgia, 'Times New Roman', Times, serif;  box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     justify-content: center;
-}
-
-.container{
-    background-color: #2b3252;
-    width: 500px;
-    height: 500px;
-}
+  }
+  
+  .container {
+    background:#FFDF00;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 25px;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .title span {
+    color:#BD022F;
+  }
+  
+  .status-action {
+    display: flex;
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    justify-content: space-around;
+    height: 30px;
+  }
+  
+  .status span {
+    color: #BD022F;
+  }
+  
+  .reset {
+    cursor: pointer;
+  }
+  
+  .reset:hover {
+    color: #BD022F;
+  }
+  
+  .game-grid {
+    background: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin-top: 50px;
+  }
+  
+  .game-cell {
+    background: #FFDF00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+  }
+  
+  .x,
+  .o {
+    cursor: default;
+  }
+  
+  .x::after {
+    content: '×';
+    color: #fa7f84;
+    font-size: 200px;
+  }
+  
+  .o::after {
+    content: '○';
+    color: #545454;
+    font-size: 225px;
+  }
+  
+  .won::after {
+    color: #BD022F;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .game-grid {
+      margin-top: 25px;
+      grid-gap: 10px;
+    }
+  
+    .game-cell {
+      height: 150px;
+      width: 150px;
+    }
+  
+    .x::after {
+      font-size: 150px;
+    }
+  
+    .o::after {
+      font-size: 175px;
+    }
+  }
+  
+  @media only screen and (max-width: 540px) {
+    .container {
+      margin: 25px;
+      padding: 25px;
+    }
+  
+    .game-cell {
+      height: 100px;
+      width: 100px;
+    }
+  
+    .x::after {
+      font-size: 100px;
+    }
+  
+    .o::after {
+      font-size: 125px;
+    }
+  }
