@@ -12,17 +12,28 @@ let gameIsLive = true;
 let xIsNext = true;
 
 
+
+
+
+/*
+
 // functions
 const letterToSymbol = (letter) => letter === 'x' ? xSymbol : oSymbol;
 
 const handleWin = (letter) => {
-  gameIsLive = false;
+  gameIsLive = true;
   if (letter === 'x') {
     statusDiv.innerHTML = `${letterToSymbol(letter)} has won!`;
+    
   } else {
     statusDiv.innerHTML = `<span>${letterToSymbol(letter)} has won!</span>`;
+    
   }
 };
+
+*/
+
+
 
 const checkGameStatus = () => {
   const topLeft = cellDivs[0].classList[1];
